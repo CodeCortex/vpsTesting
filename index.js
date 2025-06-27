@@ -1,7 +1,11 @@
 // index.js
 const express = require('express');
+const cors = require('cors')
 const app = express();
 const PORT = 3000;
+
+
+app.use(cors());
 
 const data = [{
   Name: "Roshan Jaiswal",
